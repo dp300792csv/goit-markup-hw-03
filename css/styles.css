@@ -22,6 +22,13 @@ img {
     border-bottom: 1px solid #e7e9fc;
 }
 
+.page-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
 .page-nav {
     display: flex;
     align-items: center;
@@ -104,6 +111,9 @@ img {
     color: #ffffff;
     font-weight: 500;
     font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
 }
 
 .hero-button:hover {
@@ -122,6 +132,7 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
@@ -157,8 +168,9 @@ img {
 
 .team-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-    list-style: none;
+    row-gap: 48px;
 }
 
 .team-item {
@@ -190,11 +202,16 @@ img {
     padding: 120px 0;
 }
 
+.section-title {
+    margin-bottom: 72px;
+}
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
     list-style: none;
+    row-gap: 48px;
 }
 
 .portfolio-item {
