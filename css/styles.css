@@ -17,7 +17,7 @@ img {
 
 /* ====== HEADER ====== */
 .page-header {
-    padding: 24px 0 24px;
+    padding: 24px 0;
     background-color: #ffffff;
     border-bottom: 1px solid #e7e9fc;
 }
@@ -26,7 +26,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
+    padding: 24px 15px;
 }
 
 .page-nav {
@@ -43,6 +43,7 @@ img {
     color: #4d5ae5;
     text-decoration: none;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .logo-accent {
@@ -132,6 +133,8 @@ img {
     margin: -1px;
     border: 0;
     padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -143,7 +146,7 @@ img {
 }
 
 .benefits-item {
-    width calc((100% - 3 * 24px) / 4)
+    width: calc((100% - 72px) / 4);
 }
 
 .title-benefits {
@@ -170,12 +173,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    row-gap: 48px;
 }
 
 .team-item {
     width: calc((100% - 72px) / 4);
-    flex-basis: calc((100% - 72px) / 4)
     background-color: #ffffff;
     border-radius: 0px 0px 4px 4px;
     overflow: hidden;
@@ -198,6 +199,7 @@ img {
     color: #434455;
 }
 
+/* ====== PORTFOLIO ====== */
 /* ====== PORTFOLIO ====== */
 .portfolio-section {
     padding: 120px 0;
@@ -224,7 +226,6 @@ img {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    
 }
 
 .project-title {
